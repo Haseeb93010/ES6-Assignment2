@@ -26,28 +26,29 @@ function concateSomeStr() {
 
 function askNameFromUser() {
 
-    let askFromUser = prompt("please enter something.");
+    let askFromUser = prompt("Please Enter Your Name.");
 
-    let message = "Good Morning! ";
+    let message;
 
     if (!askFromUser) {
-
-        outPut("You didn't Fill The input");
+        message = "You didn't Fill The input";
+        outPut(message);
 
     } else {
         let cap = askFromUser.charAt(0).toUpperCase() + askFromUser.slice(1);
 
-        let html = 'let askFromUser = prompt("please enter something."); <br/> let message = "Good Morning! ";'
+        let html = "let askFromUser = prompt(\"Please Enter Your Name.\"); <br/> let message;"
+
+        message = "Good Morning ";
 
         let statement = message + cap;
 
         alert(statement);
-
         outPut(statement);
-
         originalStatement(html);
     }
 }
+
 function comparisionOperators() {
     let drivingLicence = confirm("Do you have driving licence?");
 
@@ -57,20 +58,17 @@ function comparisionOperators() {
 
     if (drivingLicence && age) {
         message = "you are eligible to driving.";
-
-        outPut(message);
-
-        alert(message);
-
     }
     else {
         message = "you are not eligible to driving.";
-
-        alert(message);
-
-        outPut(message);
     }
+    let html = "let drivingLicence = confirm(\"Do you have driving licence?\") <br/> let age = confirm(\"Are you 18 years old?\"); <br/>let message;"
+
+    alert(message);
+    originalStatement(html);
+    outPut(message);
 }
+
 function ifElseIf() {
     let marks = +prompt("please enter your marks here");
 
