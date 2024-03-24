@@ -112,7 +112,7 @@ function testingSetsOfConditions() {
     } else {
         message = name + " you're a baby."
     }
-    
+
     alert(message);
     outPut(message);
 }
@@ -144,3 +144,15 @@ function nestedIfStatement() {
     outPut(message);
     originalStatement(html);
 } 
+
+// ? Login function -------------------------------------------------------------
+function login(){
+    var userName = prompt("Your user name.");
+    var userPassword = +prompt("Your password.");
+
+    if(userName === "haseeb" && userPassword === 123){
+        alert("You're login.");
+    } else{
+        alert("You're not login.");
+    }
+}
