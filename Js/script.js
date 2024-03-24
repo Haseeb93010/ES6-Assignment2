@@ -6,6 +6,8 @@ function outPut(msg) {
     document.getElementById("output").innerHTML = msg;
 }
 
+// ? create function for concate some string----------------------------------------------
+
 function concateSomeStr() {
     let message = "Good Morning";
 
@@ -23,6 +25,8 @@ function concateSomeStr() {
 
     outPut(statement);
 }
+
+// ? create function for askNameFromUser------------------------------------------------------
 
 function askNameFromUser() {
 
@@ -49,6 +53,8 @@ function askNameFromUser() {
     }
 }
 
+// ? create comparisionOperators function------------------------------------------------------
+
 function comparisionOperators() {
     let drivingLicence = confirm("Do you have driving licence?");
 
@@ -69,6 +75,8 @@ function comparisionOperators() {
     outPut(message);
 }
 
+// ? create ifElseIf function------------------------------------------------------------------
+
 function ifElseIf() {
     let marks = +prompt("please enter your marks here");
 
@@ -82,17 +90,41 @@ function ifElseIf() {
     } else {
         message = "You are fail.";
     }
+
     let html = 'let marks = +prompt("please enter your marks here"); <br/> let message;';
     alert(message);
     originalStatement(html);
     outPut(message);
 }
 
+// ? create Testing Sets Of Conditions function--------------------------------------------------
+
+function testingSetsOfConditions() {
+    let name = prompt("What's your name?");
+    let age = +prompt("What's your age?");
+    let weight = +prompt("What is your weight?");
+    let message;
+
+    if (age >= 18 && weight <= 70) {
+        message = name + " you're smart man."
+    } else if (age >= 18 && weight > 70) {
+        message = name + " you're fat guy."
+    } else {
+        message = name + " you're a baby."
+    }
+    
+    alert(message);
+    outPut(message);
+}
+
+// ? create nestedIfStatement function-----------------------------------------------------------
+
 function nestedIfStatement() {
     let age = prompt("What's your age? your age should be 18 years old");
     let haveCNIC = confirm("Do you have CNIC?");
     let isPakistani = confirm("Are you Pakistani?");
     let message;
+
     if (age >= 18) {
         if (haveCNIC) {
             if (isPakistani) {
@@ -106,6 +138,7 @@ function nestedIfStatement() {
     } else {
         message = "you are not eligible to vote casting due to age status.";
     }
+
     let html = "let age = prompt(\"What's your age? your age should be 18 years old\"); <br/> let haveCNIC = confirm(\"Do you have CNIC?\"); <br/> let isPakistani = confirm(\"Are you Pakistani?\"); <br/> let message;";
     alert(message);
     outPut(message);
